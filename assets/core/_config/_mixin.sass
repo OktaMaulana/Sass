@@ -31,3 +31,16 @@
    -ms-transform: $transform
    -o-transform: $transform
    transform: $transform
+
+// for same height content / flex property
+=d-flex
+   display: -webkit-box
+   display: -webkit-flex
+   display: -moz-box
+   display: -ms-flexbox
+   display: flex
+
+=flex-prop($webkitProp, $flexProp)
+   -webkit-box-flex: $webkitProp
+   -ms-flex: $flexProp
+   flex: $flexProp

@@ -2,4 +2,20 @@
 @import "../../_config/_variables";
 
 .card
+   +border-radius(0)
    margin-bottom: 15px
+   overflow: hidden
+   .card__img
+      min-width: 100%
+      min-height: 180px
+      border-bottom: 1px solid #efefef
+      // border-radius: calc(.25rem - 1px)
+      background-image: url('#{$bg-image-path}no_img.png')
+      background-size: cover
+      .card__img--top
+         width: 100%
+         // border-top-left-radius: calc(.25rem - 1px)
+         // border-top-right-radius: calc(.25rem - 1px)
+
+   .card__body
+      +flex-prop(1, 1 1 auto)

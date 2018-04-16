@@ -11,6 +11,15 @@ body, .content-wrapper {
   padding: 5px 15px;
 }
 
+.col.col--same-height,
+[class*="col-"].col--same-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .navbar-base .navbar-brand:hover, .navbar-base .navbar-nav .nav-link:hover, .navbar-base .navbar-nav .active > .nav-link, .page-footer .pree-footer, .page-footer .footer-copyright, .page-footer .footer-copyright a:hover {
   color: #fff;
 }
@@ -51,5 +60,27 @@ body, .content-wrapper {
 }
 
 .card {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
   margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.card .card__img {
+  min-width: 100%;
+  min-height: 180px;
+  border-bottom: 1px solid #efefef;
+  background-image: url("../img/no_img.png");
+  background-size: cover;
+}
+
+.card .card__img .card__img--top {
+  width: 100%;
+}
+
+.card .card__body {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
 }
