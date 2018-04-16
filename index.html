@@ -7,37 +7,37 @@
 
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    <link rel="stylesheet" href="assets/compile/Layout.min.css">
-   <title>Tes</title>
+   <title>Framework SASS</title>
 </head>
 <body>
-   <!-- navbar -->
-   <nav class="navbar navbar-expand-lg navbar-light navbar-base">
-    <div class="container">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-base">
+        <div class="container">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form> -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form> -->
+            </div>
         </div>
-    </div>
-   </nav>
-   <!-- navbar -->
+    </nav>
+    <!-- navbar -->
 
    <!-- content -->
    <div class="content-wrapper">
@@ -62,9 +62,11 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center content">
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -73,9 +75,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -84,9 +88,24 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col--same-height">
+                        <div class="card">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -95,67 +114,66 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col--same-height">
                         <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card">
-                            <img class="card-img-top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 <a href="#" class="btn btn-primary">Go somewhere</a>
                             </div>
                         </div>
@@ -293,7 +311,7 @@
         <div class="footer-copyright py-3 text-center">
             © 2018 Copyright:
             <a href="#">
-                <strong> www.website.com</strong>
+                <strong> Okta Maulana </strong>
             </a>
         </div>
         <!--Copyright -->
