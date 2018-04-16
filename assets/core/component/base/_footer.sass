@@ -1,0 +1,33 @@
+@import "../../_config/_mixin";
+@import "../../_config/_variables";
+
+// extend function area
+%font-white
+   color: $color-base
+
+%font-white-dark
+   color: $color-base3
+
+%bg-base-blue
+   background-color: $color-base-blue
+// extend function area
+
+
+.page-footer
+   .pree-footer
+      @extend %font-white
+      @extend %bg-base-blue
+
+   .footer-links
+      padding: 1.5rem 0
+      background-color: $color-base
+
+   .footer-copyright
+      @extend %font-white
+      @extend %bg-base-blue
+
+      a
+         text-decoration: none
+         @extend %font-white-dark
+         &:hover
+            @extend %font-white

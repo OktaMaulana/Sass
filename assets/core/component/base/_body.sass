@@ -1,0 +1,21 @@
+@import "../../_config/_mixin";
+@import "../../_config/_variables";
+
+// extend function area
+%bg-base2
+   background-color: $color-base2
+// extend function area
+
+
+body
+   @extend %bg-base2
+
+.content-wrapper
+   padding: 10px 0 
+   @extend %bg-base2
+
+   section
+      .container
+         background-color: $color-base
+         +padding-mobile($padding-mobile)
+

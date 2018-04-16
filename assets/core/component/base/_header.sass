@@ -1,0 +1,28 @@
+@import "../../_config/_mixin";
+@import "../../_config/_variables";
+
+// extend function area
+%font-white
+   color: $color-base
+
+%font-white-dark
+   color: $color-base3
+// extend function area
+
+
+.navbar-base
+   background-color: $color-base-blue
+   .navbar-brand
+      @extend %font-white-dark
+      &:hover
+         @extend %font-white
+
+   .navbar-nav
+      .nav-link
+         @extend %font-white-dark
+         &:hover
+            @extend %font-white
+
+      .active
+         >.nav-link
+            @extend %font-white
