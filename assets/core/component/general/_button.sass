@@ -1,0 +1,35 @@
+@import "../../_config/_mixin";
+@import "../../_config/_variables";
+
+// extend function area
+%motion-scale
+   +transform(scale(.96))
+
+%none-shadow
+   +box-shadow(none)
+// extend function area
+
+
+.btn
+   +border-radius(0)
+   border: none
+   color: $color-base
+   background-color: $color-base-blue
+   border-color: $color-base-blue
+
+   &.focus
+      @extend %none-shadow
+      @extend %motion-scale
+
+   &:hover
+      // +transform(translateY(-2px))
+      color: $color-base
+      background-color: darken($color-base-blue, 10%)
+      border-color: darken($color-base-blue, 10%)
+   
+   &:focus
+      @extend %none-shadow
+   
+   &:active
+      @extend %none-shadow
+      @extend %motion-scale
