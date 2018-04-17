@@ -59,6 +59,10 @@ body, .content-wrapper {
   }
 }
 
+.card .card__img, .card .card__body {
+  padding: 1rem;
+}
+
 .card {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -85,8 +89,80 @@ body, .content-wrapper {
   flex: 1 1 auto;
 }
 
+.card .card-title {
+  margin-bottom: .1rem;
+}
+
+.card .meta {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card .meta span {
+  margin-right: .3em;
+}
+
+.card .meta span :last-child {
+  margin-right: 0;
+}
+
+.card .card-text {
+  margin-top: 1rem;
+}
+
+.card .card__footer {
+  padding: .75rem 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card .card__footer:last-child {
+  -webkit-border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+  -moz-border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+  border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.card .extra-section a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card .extra-section a:hover {
+  color: rgba(0, 0, 0, 0.5);
+}
+
 .jumbotron {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
+}
+
+.btn.focus, .btn:active {
+  -webkit-transform: scale(0.96);
+  -moz-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  -o-transform: scale(0.96);
+  transform: scale(0.96);
+}
+
+.btn.focus, .btn:focus, .btn:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  background-color: #6351ce;
+  border-color: #6351ce;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #4734b8;
+  border-color: #4734b8;
 }
