@@ -84,3 +84,9 @@ body, .content-wrapper {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
 }
+
+.jumbotron {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
