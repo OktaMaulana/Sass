@@ -4,6 +4,9 @@
 // extend function area
 %padding-1rem
    padding: 1rem
+
+%border-none
+   border: none
 // extend function area
 
 
@@ -12,6 +15,16 @@
    // +box-shadow(0px 0px 5px 1.5px rgba(189, 189, 189, 0.27))
    margin-bottom: 15px
    overflow: hidden
+
+   &.card--foto
+      .card__img
+         padding: 0
+
+      .extra-section
+         padding: 5px 1rem
+
+      .card__footer
+         padding: 0
 
    .card__img
       @extend %padding-1rem
@@ -55,10 +68,33 @@
       &:last-child
          +border-radius(0 0 calc(.25rem - 1px) calc(.25rem - 1px))
 
-   .extra-section 
+   .extra-section
+      font-size: 14px
+
       a
          text-decoration: none
          color: rgba(0,0,0,.4)
 
          &:hover
-            color: rgba(0,0,0,.5)
+            color: $color-base-blue
+
+      .input-group
+         .input-group-text
+            @extend %border-none
+            padding: 0
+            background-color: transparent
+               
+            .icon
+               color: darken($color-base3, 10%)
+
+         .form-control
+            @extend %border-none
+            background-color: transparent
+
+            &:focus
+               +box-shadow(none)
+               &::-webkit-input-placeholder
+                  color: darken($color-base3, 10%)!important
+
+            &::-webkit-input-placeholder
+               color: $color-base3!important

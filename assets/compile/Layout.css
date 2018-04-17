@@ -63,12 +63,28 @@ body, .content-wrapper {
   padding: 1rem;
 }
 
+.card .extra-section .input-group .input-group-text, .card .extra-section .input-group .form-control {
+  border: none;
+}
+
 .card {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
   margin-bottom: 15px;
   overflow: hidden;
+}
+
+.card.card--foto .card__img {
+  padding: 0;
+}
+
+.card.card--foto .extra-section {
+  padding: 5px 1rem;
+}
+
+.card.card--foto .card__footer {
+  padding: 0;
 }
 
 .card .card__img {
@@ -122,13 +138,44 @@ body, .content-wrapper {
   border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
 }
 
+.card .extra-section {
+  font-size: 14px;
+}
+
 .card .extra-section a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.4);
 }
 
 .card .extra-section a:hover {
-  color: rgba(0, 0, 0, 0.5);
+  color: #6351ce;
+}
+
+.card .extra-section .input-group .input-group-text {
+  padding: 0;
+  background-color: transparent;
+}
+
+.card .extra-section .input-group .input-group-text .icon {
+  color: #ababab;
+}
+
+.card .extra-section .input-group .form-control {
+  background-color: transparent;
+}
+
+.card .extra-section .input-group .form-control:focus {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.card .extra-section .input-group .form-control:focus::-webkit-input-placeholder {
+  color: #ababab !important;
+}
+
+.card .extra-section .input-group .form-control::-webkit-input-placeholder {
+  color: #c4c4c4 !important;
 }
 
 .jumbotron {
