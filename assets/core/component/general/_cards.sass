@@ -5,8 +5,14 @@
 %padding-1rem
    padding: 1rem
 
+%padding-extraSection
+   padding: 5px 1rem
+
 %border-none
    border: none
+
+%vertical-align-middle
+   vertical-align: middle
 // extend function area
 
 
@@ -21,7 +27,7 @@
          padding: 0
 
       .extra-section
-         padding: 5px 1rem
+         @extend %padding-extraSection
 
       .card__footer
          padding: 0
@@ -42,24 +48,8 @@
 
    .card__body
       +flex-prop(1, 1 1 auto)
-      @extend %padding-1rem
-
-   .card-title
-      margin-bottom: .1rem
-
-   .meta
-      font-size: 1em;
-      color: rgba(0,0,0,.4)
-
-      span
-         margin-right: .3em;
-
-         & :last-child
-            margin-right: 0
-            
-   .card-text
-      margin-top: 1rem
-
+      @extend %padding-1rem     
+   
    .card__footer
       padding: .75rem 1rem
       background-color: rgba(0,0,0,.03)
@@ -67,6 +57,27 @@
 
       &:last-child
          +border-radius(0 0 calc(.25rem - 1px) calc(.25rem - 1px))
+
+   .card-title
+      margin-bottom: .1rem
+
+   .card-text
+      margin-top: 1rem
+
+   .card-user
+         @extend %padding-extraSection
+
+         .card-user__avatar
+            width: 2em
+            height: 2em
+            border-radius: 500rem
+
+         .card-user__name
+            @extend %vertical-align-middle
+
+         .meta
+            span
+               @extend %vertical-align-middle
 
    .extra-section
       font-size: 14px
@@ -98,3 +109,13 @@
 
             &::-webkit-input-placeholder
                color: $color-base3!important
+
+   .meta
+      font-size: 1em;
+      color: rgba(0,0,0,.4)
+
+      span
+         margin-right: .3em;
+
+         & :last-child
+            margin-right: 0

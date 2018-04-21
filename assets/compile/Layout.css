@@ -63,8 +63,16 @@ body, .content-wrapper {
   padding: 1rem;
 }
 
+.card.card--foto .extra-section, .card .card-user {
+  padding: 5px 1rem;
+}
+
 .card .extra-section .input-group .input-group-text, .card .extra-section .input-group .form-control {
   border: none;
+}
+
+.card .card-user .card-user__name, .card .card-user .meta span {
+  vertical-align: middle;
 }
 
 .card {
@@ -77,10 +85,6 @@ body, .content-wrapper {
 
 .card.card--foto .card__img {
   padding: 0;
-}
-
-.card.card--foto .extra-section {
-  padding: 5px 1rem;
 }
 
 .card.card--foto .card__footer {
@@ -105,27 +109,6 @@ body, .content-wrapper {
   flex: 1 1 auto;
 }
 
-.card .card-title {
-  margin-bottom: .1rem;
-}
-
-.card .meta {
-  font-size: 1em;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.card .meta span {
-  margin-right: .3em;
-}
-
-.card .meta span :last-child {
-  margin-right: 0;
-}
-
-.card .card-text {
-  margin-top: 1rem;
-}
-
 .card .card__footer {
   padding: .75rem 1rem;
   background-color: rgba(0, 0, 0, 0.03);
@@ -136,6 +119,20 @@ body, .content-wrapper {
   -webkit-border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
   -moz-border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
   border-radius: 0 0 calc(.25rem - 1px) calc(.25rem - 1px);
+}
+
+.card .card-title {
+  margin-bottom: .1rem;
+}
+
+.card .card-text {
+  margin-top: 1rem;
+}
+
+.card .card-user .card-user__avatar {
+  width: 2em;
+  height: 2em;
+  border-radius: 500rem;
 }
 
 .card .extra-section {
@@ -176,6 +173,19 @@ body, .content-wrapper {
 
 .card .extra-section .input-group .form-control::-webkit-input-placeholder {
   color: #c4c4c4 !important;
+}
+
+.card .meta {
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card .meta span {
+  margin-right: .3em;
+}
+
+.card .meta span :last-child {
+  margin-right: 0;
 }
 
 .jumbotron {
