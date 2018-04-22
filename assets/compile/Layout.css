@@ -29,7 +29,7 @@ body, .content-wrapper {
 }
 
 .navbar-base {
-  background-color: #6351ce;
+  background-color: #6435c9;
 }
 
 .navbar-base .navbar-brand:hover, .navbar-base .navbar-nav .nav-link:hover, .navbar-base .navbar-nav .active > .nav-link, .page-footer .pree-footer, .page-footer .footer-copyright, .page-footer .footer-copyright a:hover {
@@ -41,7 +41,7 @@ body, .content-wrapper {
 }
 
 .page-footer .pree-footer, .page-footer .footer-copyright {
-  background-color: #6351ce;
+  background-color: #6435c9;
 }
 
 .page-footer .footer-links {
@@ -154,7 +154,7 @@ body, .content-wrapper {
 }
 
 .card .extra-section a:hover {
-  color: #6351ce;
+  color: #6435c9;
 }
 
 .card .extra-section .input-group .input-group-text {
@@ -223,12 +223,12 @@ body, .content-wrapper {
   border-radius: 0;
   border: none;
   color: #fff;
-  background-color: #6351ce;
-  border-color: #6351ce;
+  background-color: #6435c9;
+  border-color: #6435c9;
 }
 
 .btn:hover {
   color: #fff;
-  background-color: #4734b8;
-  border-color: #4734b8;
+  background-color: #502aa1;
+  border-color: #502aa1;
 }
