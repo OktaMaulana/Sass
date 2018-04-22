@@ -24,11 +24,13 @@
                     <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Component
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="card.html">Card</a>
+                        </div>
                     </li>
                 </ul>
                 <!-- <form class="form-inline my-2 my-lg-0">
@@ -162,7 +164,7 @@
                         <h2>Card Foto</h2>
                     </div>
 
-                    <div class="col-md-3 col--same-height">
+                    <div class="col-md-3">
                         <div class="card card--foto">
                             <div class="card-user">
                                 <img class="card-user__avatar" src="assets/img/avatar.png" alt="Card image user">
@@ -174,13 +176,15 @@
                             <div class="card__img">
                                 <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
                             </div>
-                            <div class="extra-section">
-                                <a href="javascrpit:;">
-                                    <i class="far fa-comment"></i> 3 comments
-                                </a>
-                                <a class="float-right" href="javascrpit:;">
-                                    <i class="far fa-heart"></i> 13 likes
-                                </a>
+                            <div class="card__body">
+                                <div class="extra-section">
+                                    <a href="javascrpit:;">
+                                        <i class="far fa-comment"></i> 3 comments
+                                    </a>
+                                    <a class="float-right" href="javascrpit:;">
+                                        <i class="far fa-heart"></i> 13 likes
+                                    </a>
+                                </div>
                             </div>
                             <div class="card__footer">
                                 <div class="extra-section">
@@ -192,6 +196,31 @@
                                         </div>
                                         <input type="text" class="form-control" placeholder="Add Comment..." aria-label="Add Comment..." aria-describedby="basic-addon1">
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col--same-height">
+                        <div class="card card--foto">
+                            <div class="card__img">
+                                <img class="card__img--top" src="https://cdn.mycreativeshop.com/images/templates/8293/photography-product-&-service-rates-business-card-template-1.jpg" alt="Card image cap">
+                            </div>
+                            <div class="card__body">
+                                <h5 class="card-title">Okta Maulana</h5>
+                                <div class="meta">
+                                    <span>Coworker</span>
+                                </div>
+                                <p class="card-text">Elyse is a copywriter working in New York.</p>
+                            </div>
+                            <div class="card__footer">
+                                <div class="extra-section">
+                                    <span>
+                                        <i class="fa fa-user"></i> 22 friends
+                                    </span>
+                                    <span class="float-right">
+                                        Joined in 2013
+                                    </span>
                                 </div>
                             </div>
                         </div>
