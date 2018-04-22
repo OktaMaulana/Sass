@@ -2,8 +2,14 @@
 @import "../../_config/_variables";
 
 // extend function area
+%padding-0
+   padding: 0
+
 %padding-1rem
    padding: 1rem
+
+%padding-y0-x1
+   padding: 0 1rem
 
 %padding-extraSection
    padding: 5px 1rem
@@ -24,13 +30,28 @@
 
    &.card--foto
       .card__img
-         padding: 0
+         @extend %padding-0
+
+      .card__body
+         @extend %padding-0
+
+         .card-title
+            @extend %padding-y0-x1
+            
+         .meta
+            @extend %padding-y0-x1
+            
+         .card-text
+            @extend %padding-extraSection
+            margin-top: .1rem
+            font-size: 14px
 
       .extra-section
          @extend %padding-extraSection
+         color: rgba(0,0,0,0.4);
 
       .card__footer
-         padding: 0
+         @extend %padding-0
 
    .card__img
       @extend %padding-1rem

@@ -59,11 +59,19 @@ body, .content-wrapper {
   }
 }
 
+.card.card--foto .card__img, .card.card--foto .card__body, .card.card--foto .card__footer {
+  padding: 0;
+}
+
 .card .card__img, .card .card__body {
   padding: 1rem;
 }
 
-.card.card--foto .extra-section, .card .card-user {
+.card.card--foto .card__body .card-title, .card.card--foto .card__body .meta {
+  padding: 0 1rem;
+}
+
+.card.card--foto .card__body .card-text, .card.card--foto .extra-section, .card .card-user {
   padding: 5px 1rem;
 }
 
@@ -83,12 +91,13 @@ body, .content-wrapper {
   overflow: hidden;
 }
 
-.card.card--foto .card__img {
-  padding: 0;
+.card.card--foto .card__body .card-text {
+  margin-top: .1rem;
+  font-size: 14px;
 }
 
-.card.card--foto .card__footer {
-  padding: 0;
+.card.card--foto .extra-section {
+  color: rgba(0, 0, 0, 0.4);
 }
 
 .card .card__img {
